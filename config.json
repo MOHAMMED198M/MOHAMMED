@@ -1,29 +1,29 @@
 {
-"inbounds": [
-{
-"port": 8080,
-"protocol": "vless",
-"settings": {
-"clients": [
-{
-"id": "D2CB8181-233C-4D18-9972-8A1B04DB0044",
-"level": 0
-}
-],
-"decryption": "none"
-},
-"streamSettings": {
-"network": "ws",
-"wsSettings": {
-"path": "/Telegram_@oy_u4"
-}
-}
-}
-],
-"outbounds": [
-{
-"protocol": "freedom",
-"settings": {}
-}
-]
+  "inbounds": [
+    {
+      "port": "env:PORT",
+      "protocol": "vless",
+      "settings": {
+        "clients": [
+          {
+            "id": "D2CB8181-233C-4D18-9972-8A1B04DB0044",
+            "level": 0
+          }
+        ],
+        "decryption": "none"
+      },
+      "streamSettings": {
+        "network": "ws",
+        "wsSettings": {
+          "path": "/Telegram_@oy_u4"
+        }
+      }
+    }
+  ],
+  "outbounds": [
+    {
+      "protocol": "freedom",
+      "settings": {}
+    }
+  ]
 }
